@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DD0303;
+}
+header h1 {
+  color: #fff;
+  line-height: 13vh;
+  margin-left: 3rem;
+  width: 15%;
+}
+header h1 a img {
+  width: 100%;
+  vertical-align: middle;
+}
+header form {
+  position: relative;
+  width: 20%;
+}
+header form input {
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  padding-left: 1rem;
+}
+header form button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+header form button img {
+  width: 25px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  color: #fff;
+  margin: 1rem;
+  list-style: none;
+}
+
+footer {
+  background-color: #EBEBEB;
+  height: 25vh;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer ul li {
+  margin: 4rem;
+}
+footer .logoFooter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer .copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#card {
+  border-radius: 25px;
+  padding: 3rem;
+  margin-top: 3rem;
+  display: none;
+  width: 500px;
+  margin: 0 auto;
+  background-color: #ededed;
+}
+#card .cardDisc {
+  margin-bottom: 2rem;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Sans JP";
+}
+
+.buyWrap select {
+  border-radius: 5px;
+  width: 15%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  background: #EEE url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%23666%22%2F%3E%3C%2Fsvg%3E") right 10px center no-repeat;
+  padding: 12px 35px 12px 11px;
+  color: #000;
+}
+
+#have + label {
+  margin: 0 auto;
+  width: 300px;
+  padding: 1rem;
+}
+
+#have:checked + label {
+  margin: 0 auto;
+  background-color: #b4b4b4;
+}
+
+.cardRegister {
+  margin: 0 auto;
+  width: 300px;
+  padding: 1rem;
+}
+
+.price {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.price p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #1C7CFF;
+}
+
+.buyButton {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10%;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  background-color: #1C7CFF;
+  border-radius: 25px;
+}
+
+.statusContent {
+  margin-bottom: 1rem;
+}

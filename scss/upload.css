@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DD0303;
+}
+header h1 {
+  color: #fff;
+  line-height: 13vh;
+  margin-left: 3rem;
+  width: 15%;
+}
+header h1 a img {
+  width: 100%;
+  vertical-align: middle;
+}
+header form {
+  position: relative;
+  width: 35%;
+}
+header form input {
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  padding-left: 1rem;
+}
+header form button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+header form button img {
+  width: 25px;
+}
+header .gnavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+header .gnavi li {
+  color: #fff;
+  margin: 0.2rem;
+  list-style: none;
+  position: relative;
+  display: block;
+}
+header .gnavi li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+header .gnavi li a:hover {
+  background-color: #010101;
+  transition: 0.2s;
+}
+header .gnavi li a:active {
+  background-color: #695050;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Noto Sans JP";
+}
+main #uploadContainer {
+  width: 40%;
+  margin: 0 auto;
+}
+main #uploadContainer h2 {
+  margin: 2rem 0 1rem;
+}
+main #uploadContainer h3 {
+  font-weight: 900;
+  text-align: left;
+  color: #333;
+  margin-bottom: 1rem;
+}
+main .imageContentArea {
+  margin: 0 auto 3rem;
+  width: 100%;
+  height: 120px;
+  position: relative;
+  border: 1px dotted rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+main .imageContentArea p {
+  position: relative;
+  top: 15%;
+}
+main .imageContentArea p:nth-of-type(1) {
+  border: solid #DD0303;
+  padding-top: 0.6rem;
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: #DD0303;
+}
+main .imageContentArea p:nth-of-type(2) {
+  width: 100%;
+  padding-top: 0.5rem;
+  opacity: 0.8;
+  color: rgb(0, 110, 255);
+}
+main .imageContentArea #input-files {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+main .detailContent p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .detailContent select {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  background: #EEE url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%23666%22%2F%3E%3C%2Fsvg%3E") right 10px center no-repeat;
+  padding: 12px 50px 12px 11px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+main .brandContent p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .brandContent input {
+  width: calc(100% - 10px);
+  height: 50px;
+  padding-left: 10px;
+  background-color: #EEE;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+main .statusContent p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .statusContent select {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  background: #EEE url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%23666%22%2F%3E%3C%2Fsvg%3E") right 10px center no-repeat;
+  padding: 12px 35px 12px 11px;
+  color: #000;
+  margin-bottom: 3rem;
+}
+main .productName p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .productName input {
+  width: calc(100% - 10px);
+  height: 50px;
+  padding-left: 10px;
+  background-color: #EEE;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+main .productDescription {
+  margin-top: 5rem;
+  margin: 0 auto;
+}
+main .productDescription p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .productDescription textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #EEE;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+main .deliveryTime p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .deliveryTime select {
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  background: #EEE url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2211%22%20viewBox%3D%220%200%2011%2011%22%3E%3Cpath%20d%3D%22M4.33%208.5L0%201L8.66%201z%22%20fill%3D%22%23666%22%2F%3E%3C%2Fsvg%3E") right 10px center no-repeat;
+  padding: 12px 35px 12px 11px;
+  color: #000;
+  margin-bottom: 1rem;
+}
+main .price p {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+main .price input {
+  width: calc(100% - 10px);
+  height: 50px;
+  padding-left: 10px;
+  background-color: #EEE;
+  border-radius: 5px;
+}
+main .submit {
+  margin: 2rem;
+}
+main .submit button {
+  padding: 1rem 4rem;
+  width: 70%;
+  font-weight: bold;
+  color: #fff;
+  background-color: #DD0303;
+  border-radius: 30px;
+  border: solid 1px white;
+  transition: 0.1s;
+}
+main .submit button:hover {
+  background-color: #ca6161;
+}
+main .submit button:active {
+  background-color: #000000;
+}
+
+footer {
+  background-color: #EBEBEB;
+  height: 25vh;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer ul li {
+  margin: 4rem;
+}
+footer .logoFooter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer .copy {
+  text-align: center;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DD0303;
+}
+header h1 {
+  color: #fff;
+  line-height: 13vh;
+  margin-left: 3rem;
+  width: 15%;
+}
+header h1 a img {
+  width: 100%;
+  vertical-align: middle;
+}
+header form {
+  position: relative;
+  width: 35%;
+}
+header form input {
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  padding-left: 1rem;
+}
+header form button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+header form button img {
+  width: 25px;
+}
+header .gnavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+header .gnavi li {
+  color: #fff;
+  margin: 0.2rem;
+  list-style: none;
+  position: relative;
+  display: block;
+}
+header .gnavi li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+header .gnavi li a:hover {
+  background-color: #010101;
+  transition: 0.2s;
+}
+header .gnavi li a:active {
+  background-color: #695050;
+}
+
+footer {
+  background-color: #EBEBEB;
+  height: 25vh;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer ul li {
+  margin: 4rem;
+}
+footer .logoFooter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer .copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.loginWrap {
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.loginWrap p {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.loginWrap input {
+  width: 50%;
+  height: 50px;
+  margin: 1rem;
+  padding-left: 20px;
+  background-color: #EEE;
+}
+.loginWrap button {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  width: 40%;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  background-color: #1C7CFF;
+  margin-top: 3rem;
+  border-radius: 25px;
+}

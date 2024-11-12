@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// リセット用
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+header{
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color: #fff;
+        line-height: 13vh;
+        margin-left: 3rem;
+        width: 15%;
+        a{
+          img{
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+    }
+    background-color: #DD0303;
+    form{
+        position: relative;
+        width: 35%;
+            input{
+              box-shadow:0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+                border-radius: 20px;
+                background-color: #fff;
+                width: 100%;
+                height: 40px;
+                padding-left: 1rem;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                top: 20%;
+                img{
+                  width: 25px;
+                }
+            }
+    }
+
+    .gnavi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+        li{
+          color: #fff;
+          margin: 0.2rem;
+          list-style: none;
+          position: relative;
+          display: block;
+          a{
+            display: block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding:0.8rem;
+            transition: 0.3s;
+          border-radius: 15px;
+            &:hover{
+              background-color: #010101;
+              transition: 0.2s;
+            }
+            &:active{
+              background-color: #695050;
+            }
+          }
+        }
+    }
+}
+footer{
+  background-color: #EBEBEB;
+  height: 25vh;
+  ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li{
+      margin: 4rem;
+    }
+  }
+  .logoFooter{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .copy{
+    text-align: center;
+    font-size: 0.8rem;
+    // margin-bottom: none;
+  }
+}
+
+
+//使い回し用ここまで
+main{
+    display: flex;
+  }
+  .left{
+    max-width: 80%;
+    min-width: 80%;
+    z-index: 99;
+    .searchTxt{
+      margin: 1rem;
+      display: flex;
+      justify-content: left;
+      align-items:end;
+      h1{
+        margin-left: 4rem;
+        margin-right: 1rem;
+        font-size: 1.8rem;
+      }
+      p{
+        color: #403b3b;
+        border-bottom: solid 1px #403b3b;
+        font-size: 1.2rem;
+        // font-weight: 600;
+      }
+    }
+    h1{
+      img{
+        margin: 3rem;
+        border-radius: 20px;
+        max-width: 90%;
+      }
+    }
+    .leftConte{
+      background-color: #fff;
+      // z-index: 999;
+      position: relative;
+      margin-top: 1em;
+      margin-left: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .Item{
+        width: 25%;
+        margin: 0.4rem;
+        // border: 1px solid gray;
+        padding: 0 1rem;
+        text-align: center;
+        position: relative;
+        a{
+          text-decoration: none;
+          color: #403b3b;
+        }
+        .ItemImgDiv{
+          width: 100%;
+          height: 250px;
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          img{
+            position: relative;
+            width: auto;
+            height: 100%;
+            object-fit:cover;
+            text-align: center;
+            // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition: 0.3s;
+            &:hover{
+              transform: scale(1.01,1.01);
+              opacity: 0.8;
+            }
+          }
+        }
+        h2{
+          text-align: left;
+          margin: 1rem 2rem;
+          display: block;
+          font-size: 1rem;
+        }
+        .price{
+            position: absolute;
+            top: 200px;
+            left: 20px;
+            background-color: #403b3b;
+            opacity: 0.8;
+            width: 40%;
+            height: 13%;
+            border-radius: 0 25px 25px 0;
+          p{
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 900;
+            transform: translate(0%,20%);
+          }
+        }
+      }
+    }
+  }
+  .right{
+    border-left: gray solid 1px;
+    max-width: 20%;
+    padding: 1rem;
+      .rightWatch{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        div{
+          border: gray 1px solid;
+          padding: 1rem;
+          width: 30%;
+          margin: 3%;
+          img{
+            width: 100%;
+          }
+        }
+        .more{
+          a{
+            text-align: right;
+          }
+          text-align: right;
+        }
+      }
+      h2{
+        margin: 1rem 0 1rem;
+        font-size: 1.3rem;
+      }
+      ul{
+        padding-bottom: 1rem;
+        li{
+          list-style: none;
+          padding: 0.2rem 0;
+          a{
+            text-decoration: none;
+            color: #000000;
+            &:hover{
+              color: #cfbc2f;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  .osusume{
+    position: absolute;
+    z-index: -3;
+    height: 10%;
+    width: 20%;
+    left: 30%;
+    top: -2rem;
+    background-color: #DD0303;
+    border: 1px solid gray;
+    border-radius: 30px;
+    a{
+      margin: 10%;
+    }
+  }
+  .watch{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    background-color: #fff;
+    z-index: -3;
+    left: 60%;
+    top: -2rem;
+    border: 1px solid gray;
+    border-radius: 30px;
+    a{
+      margin: 10%;
+    }
+  }
+  .soldOut{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    background-color: red;
+    color: #fff;
+  }
+  .ItemImgDiv{
+    position: relative;
+  }

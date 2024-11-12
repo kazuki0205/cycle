@@ -38,8 +38,8 @@
 
 ## ディレクトリ構成
 /cycle
-  ├── /css         # スタイルシート 
-  ├── /scss          # scssスタイル  
+  ├── /css        # スタイルシート  
+  ├── /scss          # scssスタイル    
   ├── /js          # JavaScriptファイル  
   ├── /img       # 商品画像  
   ├── /cont        # コントローラーファイル  

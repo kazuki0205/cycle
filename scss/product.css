@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+header {
+  height: 13vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DD0303;
+}
+header h1 {
+  color: #fff;
+  line-height: 13vh;
+  margin-left: 3rem;
+  width: 15%;
+}
+header h1 a img {
+  width: 100%;
+  vertical-align: middle;
+}
+header form {
+  position: relative;
+  width: 35%;
+}
+header form input {
+  box-shadow: 0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  padding-left: 1rem;
+}
+header form button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+header form button img {
+  width: 25px;
+}
+header .gnavi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+header .gnavi li {
+  color: #fff;
+  margin: 0.2rem;
+  list-style: none;
+  position: relative;
+  display: block;
+}
+header .gnavi li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+header .gnavi li a:hover {
+  background-color: #010101;
+  transition: 0.2s;
+}
+header .gnavi li a:active {
+  background-color: #695050;
+}
+
+footer {
+  background-color: #EBEBEB;
+  height: 25vh;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer ul li {
+  margin: 4rem;
+}
+footer .logoFooter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+footer .copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+main {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+}
+.left .mainLeft {
+  width: 40%;
+  margin: 5%;
+}
+.left .mainLeft .itemImg {
+  width: 90%;
+  margin-left: 20%;
+}
+.left .mainLeft .itemImg img {
+  width: 100%;
+}
+.left .mainLeft .user {
+  margin-top: 4rem;
+  margin-left: 30%;
+  font-size: 1rem;
+}
+.left .mainLeft .user .human {
+  padding: 5%;
+  border-bottom: 1px gray solid;
+  width: 70%;
+  margin-bottom: 5%;
+}
+.left .mainLeft .user .userItem {
+  display: flex;
+  justify-content: left;
+}
+.left .mainLeft .user .userItem .userIcon {
+  width: 30%;
+}
+.left .mainLeft .user .userItem .userIcon img {
+  border-radius: 30px;
+  width: 100%;
+}
+.left .mainLeft .user .userItem .userName {
+  margin-left: 10%;
+  transform: translate(0%, 5%);
+}
+.left .mainLeft .user .userItem .userName .rev {
+  color: #333;
+  opacity: 0.8;
+}
+.left .mainRight {
+  width: 45%;
+  margin: 5%;
+}
+.left .mainRight .productTitle {
+  width: 100%;
+}
+.left .mainRight .productTitle .genre {
+  font-size: 1rem;
+  margin: 0.3rem 0 0.7rem;
+}
+.left .mainRight .productTitle .price {
+  font-size: 2rem;
+  color: #DD0303;
+}
+.left .mainRight .productTitle .price span {
+  color: #333;
+  font-size: 1rem;
+}
+.left .mainRight .productTitle .buy {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  height: 3rem;
+  text-align: center;
+  width: 90%;
+  background-color: #DD0303;
+  border-radius: 10px;
+}
+.left .mainRight .productTitle .buy a {
+  line-height: 3rem;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+.left .mainRight .productTitle .buy a:hover {
+  background-color: #df4040;
+  border-radius: 10px;
+}
+.left .mainRight .productSummary {
+  width: 100%;
+}
+.left .mainRight .productSummary .topic {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+.left .mainRight .productSummary .summaryComment {
+  line-height: 2rem;
+  padding-bottom: 1rem;
+}
+.left .mainRight .productSummary .saleDate {
+  color: #797979;
+  font-size: 0.4rem;
+}
+.left .mainRight .detail {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  border-bottom: 1px gray solid;
+}
+.left .mainRight .detail .topic {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px gray solid;
+}
+.left .mainRight .detail table {
+  height: 50vh;
+  text-align: left;
+}
+.left .mainRight .detail table tr th {
+  margin-top: 1rem;
+  padding-right: 4rem;
+}
+.left .mainRight .detail table tr td {
+  margin-top: 1rem;
+}
+.left .mainRight .detail table tr td a {
+  color: rgb(0, 110, 255);
+  border-bottom: solid 1px rgb(0, 110, 255);
+  text-decoration: none;
+}
+.left .mainRight .commentConte {
+  width: 100%;
+}
+.left .mainRight .commentConte .topic {
+  text-align: left;
+}
+.left .mainRight .commentConte .commentDiv .nonComment {
+  margin: 4rem 0 0;
+  text-align: center;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment p {
+  padding-bottom: 5px;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment .comment_time {
+  font-size: 0.8rem;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment .icon img {
+  width: 100%;
+  border-radius: 15px;
+}
+.left .mainRight .commentConte .commentDiv .sellerComment .commentItem {
+  padding-left: 20%;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment p {
+  padding-bottom: 5px;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment .comment_time {
+  font-size: 0.8rem;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment .icon img {
+  border-radius: 25px;
+  width: 100%;
+}
+.left .mainRight .commentConte .commentDiv .buyerComment .commentItem {
+  text-align: right;
+  right: 10;
+  padding-right: 20%;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form {
+  position: relative;
+  top: 0;
+  left: 25;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form div {
+  margin: 5rem auto 1rem;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form div p {
+  color: #333;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form div textarea {
+  border: solid #333 1px;
+  width: 90%;
+  height: 10%;
+  padding: 0.5rem;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form button {
+  border: solid #DD0303 2px;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 0.5rem 2rem;
+  width: 90%;
+  color: #fb2626;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.left .mainRight .commentConte .commentDiv .commentWrite form button:hover {
+  background-color: #fff3f3;
+}
+
+.right {
+  border-left: gray solid 1px;
+  max-width: 20%;
+  padding: 1rem;
+}
+.right .rightWatch {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.right .rightWatch div {
+  border: gray 1px solid;
+  padding: 1rem;
+  width: 30%;
+  margin: 3%;
+}
+.right .rightWatch div img {
+  width: 100%;
+}
+.right .rightWatch .more {
+  text-align: right;
+}
+.right .rightWatch .more a {
+  text-align: right;
+}
+.right h2 {
+  margin: 1rem 0 1rem;
+  font-size: 1.3rem;
+}
+.right ul {
+  padding-bottom: 1rem;
+}
+.right ul li {
+  list-style: none;
+  padding: 0.2rem 0;
+}
+.right ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.right ul li a:hover {
+  color: #cfbc2f;
+  font-weight: 900;
+}

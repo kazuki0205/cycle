@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// リセット用
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+header{
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        color: #fff;
+        line-height: 13vh;
+        margin-left: 3rem;
+        width: 15%;
+        a{
+          img{
+            width : 100%;
+            vertical-align: middle;
+          }
+        }
+    }
+    background-color: #DD0303;
+    form{
+        position: relative;
+        width: 35%;
+            input{
+              box-shadow:0px 0px 10px 1px rgba(82, 82, 82, 0.5) inset;
+                border-radius: 20px;
+                background-color: #fff;
+                width: 100%;
+                height: 40px;
+                padding-left: 1rem;
+            }
+            button{
+                position: absolute;
+                right: 0;
+                top: 20%;
+                img{
+                  width: 25px;
+                }
+            }
+    }
+    .gnavi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+        li{
+          color: #fff;
+          margin: 0.2rem;
+          list-style: none;
+          position: relative;
+          display: block;
+          a{
+            display: block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding:0.8rem;
+            transition: 0.3s;
+          border-radius: 15px;
+            &:hover{
+              background-color: #010101;
+              transition: 0.2s;
+            }
+            &:active{
+              background-color: #695050;
+            }
+          }
+        }
+    }
+}
+footer{
+  background-color: #EBEBEB;
+  height: 25vh;
+  ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li{
+      margin: 4rem;
+    }
+  }
+  .logoFooter{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .copy{
+    text-align: center;
+    font-size: 0.8rem;
+    // margin-bottom: none;
+  }
+}
+
+
+
+
+main{
+    margin-top: 2rem;
+    display: flex;
+  }
+.left{
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
+  .mainLeft{
+    width: 40%;
+    margin: 5%;
+    .itemImg{
+      // border: 1px solid gray;
+      width: 90%;
+      margin-left: 20%;
+      img{
+        width: 100%;
+      }
+    }
+    .user{
+      margin-top: 4rem;
+      margin-left: 30%;
+      font-size: 1rem;
+      .human{
+        padding: 5%;
+        border-bottom: 1px gray solid;
+        width: 70%;
+        margin-bottom: 5%;
+      }
+      .userItem{
+
+        display: flex;
+        justify-content: left;
+        .userIcon{
+          width: 30%;
+          img{
+            border-radius: 30px;
+            width: 100%;
+          }
+        }
+        .userName{
+          margin-left: 10%;
+          transform: translate(0%,5%);
+          .rev{
+            color: #333;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .mainRight{
+    width: 45%;
+    margin: 5%;
+    .productTitle{
+      width: 100%;
+      .genre{
+        font-size: 1rem;
+        margin: 0.3rem 0 0.7rem;
+      }
+      .price{
+        font-size: 2rem;
+        color: #DD0303;
+        span{
+          color: #333;
+          font-size: 1rem;
+        }
+      }
+      .buy{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        width: 50%;
+        height: 3rem;
+        text-align: center;
+        width: 90%;
+        a{
+          line-height: 3rem;
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 900;
+          &:hover{
+            background-color: #df4040;
+            border-radius: 10px;
+          }
+        }
+        background-color: #DD0303;
+        border-radius: 10px;
+        
+      }
+    }
+    .productSummary{
+      width: 100%;
+      .topic{
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+      }
+      .summaryComment{
+        line-height: 2rem;
+        padding-bottom: 1rem;
+      }
+      .saleDate{
+        color: #797979;
+        font-size: 0.4rem;
+      }
+      // width: 100%;
+    }
+    .detail{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      .topic{
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px gray solid;
+      }
+      table{
+        height : 50vh;
+        text-align: left;
+        tr{ 
+          th{
+            margin-top: 1rem;
+            padding-right: 4rem;
+          }
+          td{
+            margin-top: 1rem;
+            a{
+              color: rgb(0, 110, 255);
+              border-bottom: solid 1px rgb(0, 110, 255);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      width: 100%;
+      border-bottom: 1px gray solid;
+    }
+    .commentConte{
+      .topic{
+        text-align: left;
+      }
+      width: 100%;
+      .commentDiv{
+        .nonComment{
+          margin: 4rem 0 0;
+          text-align: center;
+        }
+        .sellerComment{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          position: relative;
+          p{
+            padding-bottom:5px ;
+          }
+          .comment_time{
+            font-size: 0.8rem;
+          }
+          .icon{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 10%;
+            img{
+              width: 100%;
+              border-radius: 15px;
+            }
+          }
+          .commentItem{
+            // position: absolute;
+            padding-left: 20%;
+          }
+        } //sellerComment
+        .buyerComment{
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+          p{
+            padding-bottom:5px ;
+          }
+          .comment_time{
+            font-size: 0.8rem;
+          }
+          // display: flex;
+          // justify-content: right;
+          position: relative;
+          .icon{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 10%;
+            img{
+              border-radius: 25px;
+              width: 100%;
+            }
+          }
+          .commentItem{
+            // position: absolute;
+            text-align: right;
+            right: 10;
+            padding-right: 20%;
+          }
+        } //buyerComment
+
+        .commentWrite{
+          form{
+            position: relative;
+            top: 0;
+            left: 25;
+            div{
+              margin: 5rem auto 1rem;
+              p{
+                color: #333;
+                font-weight: bold;
+                font-size: 0.8rem;
+              }
+              textarea{
+                border: solid #333 1px;
+                width: 90%;
+                height: 10%;
+                padding: 0.5rem;
+              }
+            }
+            button{
+                border: solid #DD0303 2px;
+                border-radius: 5px;
+                margin:1rem 0;
+                padding: 0.5rem 2rem;
+                width: 90%;
+                color: #fb2626;
+                font-weight: bold;
+                transition: 0.2s;
+              &:hover{
+                background-color: #fff3f3;
+              }
+            }
+          }
+        }//commentWrite
+      }
+    }
+  }
+}
+.right{
+  border-left: gray solid 1px;
+  max-width: 20%;
+  padding: 1rem;
+    .rightWatch{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      div{
+        border: gray 1px solid;
+        padding: 1rem;
+        width: 30%;
+        margin: 3%;
+        img{
+          width: 100%;
+        }
+      }
+      .more{
+        a{
+          text-align: right;
+        }
+        text-align: right;
+      }
+    }
+    h2{
+      margin: 1rem 0 1rem;
+      font-size: 1.3rem;
+    }
+    ul{
+      padding-bottom: 1rem;
+      li{
+        list-style: none;
+        padding: 0.2rem 0;
+        a{
+          text-decoration: none;
+          color: #000000;
+          &:hover{
+            color: #cfbc2f;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
